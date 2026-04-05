@@ -1,0 +1,6 @@
+body { background: #cbd5e1; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; }
+.converter-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); text-align: center; width: 300px; }
+input, select, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+button { background: #2563eb; color: white; cursor: pointer; font-weight: bold; border: none; }
+button:hover { background: #1d4ed8; }
+.result-box { margin-top: 15px; font-weight: bold; padding: 10px; background: #f8fafc; border-radius: 5px; }

@@ -1,0 +1,59 @@
+/* This line makes the jumping smooth instead of instant */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body { line-height: 1.6; color: #333; background: #f9f9f9; }
+.container { max-width: 1100px; margin: auto; padding: 0 20px; }
+
+/* Header & Nav */
+header { background: #2c3e50; color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: #fff; text-decoration: none; font-weight: bold; transition: 0.3s; }
+nav ul li a:hover { color: #e67e22; cursor: pointer; }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+.hero .btn { 
+    background: #e67e22; 
+    color: #fff; 
+    padding: 15px 35px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block;
+    transition: 0.3s;
+}
+.hero .btn:hover { background: #d35400; transform: scale(1.05); cursor: pointer; }
+
+/* Features */
+.features { display: flex; gap: 20px; padding: 80px 0; }
+.card { 
+    flex: 1; 
+    padding: 40px; 
+    background: #fff; 
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+/* Footer */
+footer { background: #2c3e50; color: #fff; text-align: center; padding: 40px 0; }
